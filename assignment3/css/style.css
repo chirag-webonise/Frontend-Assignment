@@ -1,0 +1,77 @@
+*{
+	margin: 0;
+}
+body
+{
+	font-family:arial;
+	font-size:14px;
+	line-height:18px
+}
+#wrap
+{
+	width:940px;       
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#header
+{
+	height:180px;
+	background:#499bd7;
+}
+
+h1
+{
+    text-align:center;
+    color: white;
+    line-height:180px;
+}
+
+#Navigator
+{
+    height:60px;
+    background:#d9d9d9;
+}
+
+.headNavigation
+{
+	color:black;
+	text-decoration: none;
+	line-height:60px;
+}
+
+.content
+{	
+    padding:30px 0px 20px 0px;
+    line-height:18px;  
+}
+
+#image
+{
+	float: left;
+        padding:0px 12px 0px 0px; 
+}
+
+p
+{
+	text-align:justify;
+}
+
+
+#footer
+{
+	background-color :#eeeeee;
+	height:65px;
+}
+
+.footNavigation
+{
+	font-size: 12px;
+	line-height:65px;
+	display:inline;	
+}
+#footerText
+{	
+	float:right;
+}
+
