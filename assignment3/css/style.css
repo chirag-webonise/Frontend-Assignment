@@ -1,17 +1,25 @@
-*{
+
+html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, a, ul, li, nav
+{
 	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
+
 body
 {
 	font-family:arial;
 	font-size:14px;
 	line-height:18px
 }
-#wrap
+
+.wrap
 {
 	width:940px;       
-	margin-left: auto;
-	margin-right: auto;
+	margin:0px auto;
 }
 
 #header
@@ -22,56 +30,71 @@ body
 
 h1
 {
-    text-align:center;
-    color: white;
-    line-height:180px;
+	text-align:center;
+	font-size:30px;
+	line-height:35px;
+	color: white;
+    	padding:75px 0px;
 }
 
-#Navigator
+#headNavigator
 {
-    height:60px;
-    background:#d9d9d9;
+	height:60px;
+	background:#d9d9d9;
 }
 
-.headNavigation
+.headNavigationOption
+{	
+    	padding:21px 0px;		
+}
+
+li
+{
+	display:inline;
+}
+
+a
 {
 	color:black;
 	text-decoration: none;
-	line-height:60px;
 }
 
 .content
 {	
-    padding:30px 0px 20px 0px;
-    line-height:18px;  
+	margin:30px auto 20px;
 }
 
-#image
+#windowImage
 {
 	float: left;
-        padding:0px 12px 0px 0px; 
+        margin:0px 12px 12px 0px; 
 }
 
 p
 {
-	text-align:justify;
+	margin:0px 0px 10px 0px
 }
-
 
 #footer
 {
+	margin:20px 0px 0px ;
 	background-color :#eeeeee;
 	height:65px;
 }
 
-.footNavigation
+.alignLeft
 {
-	font-size: 12px;
-	line-height:65px;
-	display:inline;	
+	float:left;
 }
+.footNavigationOption 
+{
+        padding:23.5px 0px;
+	font-size:12px;
+}
+
 #footerText
 {	
 	float:right;
+	display:inline;
 }
 
