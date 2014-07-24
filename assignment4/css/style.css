@@ -258,7 +258,7 @@ h2.howItWorks
 	margin-left:7px;
 }
 
-h6.policy
+.policy
 {
 	font-size:14px;
 	color:#aaaaaa;
@@ -266,15 +266,15 @@ h6.policy
 
 .TC
 {
-	font-size:14px;
-	color:#aaaaaa;
 	padding:0px 10px;	
 	border-right:1px solid #aaaaaa;
 }
+
 .firstTC
 {
 	margin-left:60px;
 }
+
 .lastTC
 {
 	border:none;
