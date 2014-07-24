@@ -9,14 +9,27 @@ html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, a, ul, li, nav
 	vertical-align: baseline;
 }
 
+@font-face 
+{
+        font-family: "Source Sans Pro";
+        src: url('../fonts/888244629-SourceSansPro-Regular.eot');
+        src: url('../fonts/888244629-SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/888244629-SourceSansPro-Regular.svg#Source Sans Pro') format('svg'),
+        url('../fonts/888244629-SourceSansPro-Regular.woff') format('woff'),
+        url('../fonts/888244629-SourceSansPro-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+}
+
 body
 {
-	font-family:SourceSansPro;
+	font-family: 'Source Sans Pro', 'sans-serif';
+	font-size: 18px;
 }
 
 .wrap
 {
-	width:1200px;       
+	width:940px;       
 	margin:0px auto;
 }
 
@@ -25,23 +38,26 @@ body
 	height:50px;
 	background:#444444;
 }
-#logo
-{
-	padding:none;
-	margin:9px 0px;
-}
-ul
-{
-	padding:15px 0px;
-}
+
 li
 {
+	border-left:1px solid black;
+}
+
+.logoPadding
+{
+	padding:9px 50px 9px 0px;
+}
+
+.headerPadding
+{
+	display:block;
 	color: #aaaaaa;
 	font-size: 18px;
 	line-height:20px;
-	display:inline;
-	margin:0px 25px;
-	text-transform: uppercase;
+	text-decoration:none;
+	padding:15px 25px;
+	text-transform: uppercase; 
 }
 
 .alignLeft
@@ -50,11 +66,17 @@ li
 	float: left;
 }
 
-.content
+ul
+{
+	list-style: none;
+}
+
+.banner
 {
 	background-image: url("../images/backgroundPattern.jpg");
 	background-repeat: repeat;
 	padding:50px 20px;
+	height:486px;
 }
 h1
 {
@@ -82,7 +104,7 @@ button
 	font-size:20px;
 	text-transform: uppercase;
 	margin:40px 20px 0px 0px;
-	border-radius: 10px;
+	border-radius: 3px;
 }
 .btn1
 {
@@ -105,7 +127,6 @@ button
 #images
 {
 	margin:0px 0px 0px 20px;
-	display:inline;
 }
 
 .alignRight
@@ -113,29 +134,28 @@ button
 	float: right;
 }
 
-#text
+imga
 {
-	display:inline;
 }
-img
-{
-	margin-left:15px;
-}
+
 .img1
 {
 	border:5px solid #434343;
 	box-shadow: 0px 0px 5px black;
+	margin:90px 0px 0px 15px;
 }
 
 .img2
 {
 	border:5px solid #8b5500;
 	box-shadow: 0px 0px 5px black;
+	margin:50px 0px 0px 15px;
 }
 
 .img3
 {
 	border:5px solid #434343;
 	box-shadow: 0px 0px 5px black;
+	margin:50px 0px 0px 15px;
 }
 
