@@ -1,0 +1,100 @@
+
+html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, a, ul, li, nav
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body
+{
+	font-family:arial;
+	font-size:14px;
+	line-height:18px
+}
+
+.wrap
+{
+	width:940px;       
+	margin:0px auto;
+}
+
+#header
+{
+	height:180px;
+	background:#499bd7;
+}
+
+h1
+{
+	text-align:center;
+	font-size:30px;
+	line-height:35px;
+	color: white;
+    	padding:75px 0px;
+}
+
+#headNavigator
+{
+	height:60px;
+	background:#d9d9d9;
+}
+
+.headNavigationOption
+{	
+    	padding:21px 0px;		
+}
+
+li
+{
+	display:inline;
+}
+
+a
+{
+	color:black;
+	text-decoration: none;
+}
+
+.content
+{	
+	margin:30px auto 20px;
+}
+
+#windowImage
+{
+	float: left;
+        margin:0px 12px 12px 0px; 
+}
+
+p
+{
+	margin:0px 0px 10px 0px
+}
+
+#footer
+{
+	margin:20px 0px 0px ;
+	background-color :#eeeeee;
+	height:65px;
+}
+
+.alignLeft
+{
+	float:left;
+}
+.footNavigationOption 
+{
+        padding:23.5px 0px;
+	font-size:12px;
+}
+
+#footerText
+{	
+	float:right;
+	display:inline;
+}
+
