@@ -116,6 +116,7 @@ a
 .features
 {
 	width:700px;
+	float:left;
 }
 .features h2
 {
@@ -213,8 +214,9 @@ a
 
 .client
 {
-	width:200px;
+	width:220px;
 	float:right;
+	margin-left:20px;
 }
 
 .client h2
@@ -223,5 +225,44 @@ a
 	font-size:36px;
 	margin-top:80px;
 }
+
+.MLB
+{
+	background-image:url("../images/MLB.png");
+	background-repeat:no-repeat;
+	height:60px;
+	width:220px;
+	background-size:100%;	
+	border: 1px solid #8c8c8c;
+	display:block;
+	background-position:center;
+	margin-top:20px;
+}
+
+.USA
+{
+	background-image:url("../images/usaFootball.png");
+	background-repeat:no-repeat;
+	height:80px;
+	width:108px;
+	background-size:100%;	
+	border: 1px solid #8c8c8c;
+	display:block;
+	background-position:center;
+	float:left;
+}
+.chemistry
+{
+	background-image:url("../images/chemistry.png");
+	background-repeat:no-repeat;
+	height:80px;
+	width:108px;
+	background-size:100%;	
+	border: 1px solid #8c8c8c;
+	display:block;
+	background-position:center;
+	float:left;
+}
+
 
 
