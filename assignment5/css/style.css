@@ -1,0 +1,227 @@
+html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, a, ul, li, nav, button
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body
+{
+    font-family:arial,sans-serif;
+}
+
+ul
+{
+	list-style:none;
+}
+a
+{
+	text-decoration:none;
+	display:block;
+}
+
+.clear
+{
+	clear:both;
+}
+
+.container
+{
+    width:940px;       
+    margin:0px auto;
+}
+
+#header
+{
+	color:#00bbcc;
+}
+
+.logo
+{
+	background-image:url("../images/logo.png");
+	background-repeat:no-repeat;
+	float:left;
+	height:50px;
+	width:285px;
+	background-position:center;
+}
+
+.navigation
+{
+	float:right;	
+}
+
+.navigation li
+{
+	font-size:20px;
+	line-height:40px;
+	text-transform:uppercase;
+	float:left;
+	margin:10px 40px 10px 0px;	
+}
+
+.loginBtn
+{
+    float:right;
+    height:30px;
+    width:66px;
+    font-size:14px;
+    font-weight:bold;
+    line-height:18px;
+    text-transform: uppercase;
+    margin:10px 0px;
+    border-radius: 3px;
+    text-align:center;
+    background-color:#00bbcc;
+    padding:8px 0px;
+    color:white; 
+}
+
+
+.bannerImage
+{
+	background-image:url("../images/bannerImage.png");
+	background-repeat:no-repeat;
+	background-position:center;
+	height:610px;
+	background-size:1180px;
+}
+
+.banner h1
+{
+	font-size:44px;
+	line-height:54px;
+	font-weight:bold;
+	width:580px;	
+	margin-top:100px;
+	float:left;
+}
+.banner a
+{
+    height:55px;
+    width:220px;
+    font-size:30px;
+    font-weight:bold;
+    line-height:55px;
+    border-radius: 3px;
+    text-align:center;
+    background-color:#ff8a00;
+    color:white;
+    margin-top:50px;
+}
+
+.features
+{
+	width:700px;
+}
+.features h2
+{
+	color:#00bbcc;
+	font-size:36px;
+	margin-top:80px;
+	font-weight:bold;
+}
+
+.featureList li
+{
+	float:left;
+	width:223px;	
+	text-align:left;
+	margin:30px 10px 0px 0px;
+}
+
+
+.featureList h3
+{	
+	font-weight:bold;
+	font-size:15px;
+	line-height:36px;
+        color:black;
+}
+
+.featureList p
+{
+	text-align:left;
+	font-size:13px;
+	line-height:17px;
+        color:#8c8c8c;
+}
+
+.createCourse a
+{
+	background-image:url("../images/featureIcon1.png");
+	background-repeat:no-repeat;
+	height:21px;
+	width:20px;	
+}
+
+.createAssessment a
+{
+	background-image:url("../images/featureIcon2.png");
+	background-repeat:no-repeat;
+	height:21px;
+	width:20px;		
+}
+
+.trackScores a
+{
+	background-image:url("../images/featureIcon3.png");
+	background-repeat:no-repeat;
+	height:21px;
+	width:20px;		
+}
+
+.reports a
+{
+	background-image:url("../images/featureIcon4.png");
+	background-repeat:no-repeat;
+	height:21px;
+	width:20px;		
+}
+
+.multimediaSupport a
+{
+	background-image:url("../images/featureIcon5.png");
+	background-repeat:no-repeat;
+	height:21px;
+	width:20px;		
+}
+.notifications a
+{
+	background-image:url("../images/featureIcon7.png");
+	background-repeat:no-repeat;
+	height:21px;
+	width:20px;		
+}
+.certifications a
+{
+	background-image:url("../images/featureIcon8.png");
+	background-repeat:no-repeat;
+	height:21px;
+	width:20px;		
+}
+.groupDiscussions a
+{
+	background-image:url("../images/featureIcon9.png");
+	background-repeat:no-repeat;
+	height:21px;
+	width:20px;		
+}
+
+.client
+{
+	width:200px;
+	float:right;
+}
+
+.client h2
+{
+	color:#00bbcc;
+	font-size:36px;
+	margin-top:80px;
+}
+
+
