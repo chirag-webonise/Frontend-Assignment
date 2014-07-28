@@ -6,263 +6,470 @@ html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, a, ul, li, nav, button
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    text-decoration:none;
+    list-style:none;
 }
+
+@font-face {
+    font-family: 'titilliumbold';
+    src: url('../fonts/titillium/titillium-semibold-webfont.eot');
+    src: url('../fonts/titillium/titillium-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/titillium/titillium-semibold-webfont.woff') format('woff'),
+         url('../fonts/titillium/titillium-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/titillium/titillium-semibold-webfont.svg#titilliumbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'titilliumregular';
+    src: url('../fonts/titillium/titillium-regular-webfont.eot');
+    src: url('../fonts/titillium/titillium-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/titillium/titillium-regular-webfont.woff') format('woff'),
+         url('../fonts/titillium/titillium-regular-webfont.ttf') format('truetype'),
+         url('../fonts/titillium/titillium-regular-webfont.svg#titilliumregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'titillium_bdbold';
+    src: url('../fonts/titillium/titillium-bold-webfont.eot');
+    src: url('../fonts/titillium/titillium-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/titillium/titillium-bold-webfont.woff') format('woff'),
+         url('../fonts/titillium/titillium-bold-webfont.ttf') format('truetype'),
+         url('../fonts/titillium/titillium-bold-webfont.svg#titillium_bdbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 body
 {
-    font-family:arial,sans-serif;
-}
-
-ul
-{
-	list-style:none;
-}
-a
-{
-	text-decoration:none;
-	display:block;
+    font-family:'titilliumregular', Helvetica, arial, sans-serif, serif;
 }
 
 .clear
 {
 	clear:both;
+	float:none;
 }
 
 .container
 {
     width:940px;       
-    margin:0px auto;
+    margin:0 auto;
 }
 
 #header
 {
 	color:#00bbcc;
+  	text-transform: uppercase;
 }
 
 .logo
 {
-	background-image:url("../images/logo.png");
-	background-repeat:no-repeat;
+	background:url("../images/logo.png") no-repeat center;
 	float:left;
-	height:50px;
+	height:22px;
 	width:285px;
-	background-position:center;
+	padding: 10px 10px 10px 0;
+	margin-top: 6px;
+}
+
+.navBtnWrap
+{
+	float:right;
 }
 
 .navigation
 {
-	float:right;	
+	float:left;
+	font:20px titilliumbold;
+	line-height:30px;
+	text-transform:uppercase;	
+	margin:10px 0;
+}
+
+.navigation a
+{
+	color:#00bbcc;
+	padding: 5px;
 }
 
 .navigation li
 {
-	font-size:20px;
-	line-height:40px;
-	text-transform:uppercase;
-	float:left;
-	margin:10px 40px 10px 0px;	
+	float :left;
+	margin-right:30px;	
 }
 
 .loginBtn
 {
-    float:right;
-    height:30px;
-    width:66px;
-    font-size:14px;
-    font-weight:bold;
+    float:left;
+    font:14px titillium_bdbold;
     line-height:18px;
-    text-transform: uppercase;
-    margin:10px 0px;
     border-radius: 3px;
-    text-align:center;
     background-color:#00bbcc;
-    padding:8px 0px;
+    padding:8px 14px;
     color:white; 
+    margin:10px 0;
 }
 
 
-.bannerImage
+.banner
 {
-	background-image:url("../images/bannerImage.png");
-	background-repeat:no-repeat;
-	background-position:center;
-	height:610px;
-	background-size:1180px;
+	background:url("../images/bannerImage.png") no-repeat center ;
+	background-size:cover;
+}
+
+.bannerText
+{
+	font-family: titillium_bdbold;
+	display:inline-block;
+	margin:100px 0 400px;
 }
 
 .banner h1
 {
 	font-size:44px;
 	line-height:54px;
-	font-weight:bold;
 	width:580px;	
-	margin-top:100px;
-	float:left;
-}
-.banner a
-{
-    height:55px;
-    width:220px;
-    font-size:30px;
-    font-weight:bold;
-    line-height:55px;
-    border-radius: 3px;
-    text-align:center;
-    background-color:#ff8a00;
-    color:white;
-    margin-top:50px;
+	margin-bottom: 40px;
 }
 
+.banner a
+{
+    font-size:30px;
+    line-height:55px;
+    border-radius: 3px;
+    background:#ff8a00;
+    color:white;
+    padding:5px 10px; 
+}
+
+.content
+{
+	padding-bottom: 95px;
+}
 .features
 {
 	width:700px;
 	float:left;
+
 }
+
 .features h2
 {
 	color:#00bbcc;
-	font-size:36px;
+	font:36px titillium_bdbold;
 	margin-top:80px;
-	font-weight:bold;
+}
+
+.featureList
+{
+	border-top: 1px solid #dfdfdf;
+	margin-top: 20px;
+	font-family: Helvetica;
 }
 
 .featureList li
 {
 	float:left;
 	width:223px;	
-	text-align:left;
 	margin:30px 10px 0px 0px;
 }
 
 
 .featureList h3
 {	
-	font-weight:bold;
 	font-size:15px;
-	line-height:36px;
-        color:black;
+	font-weight: bold;
+	line-height:20px;
+	color:#333333
 }
 
 .featureList p
 {
-	text-align:left;
+	margin-top:8px;
 	font-size:13px;
 	line-height:17px;
-        color:#8c8c8c;
+    color:#8c8c8c;
+    word-break:break;
 }
 
-.createCourse a
+.featureList a
 {
-	background-image:url("../images/featureIcon1.png");
-	background-repeat:no-repeat;
+	float:left;
 	height:21px;
 	width:20px;	
 }
 
+.featureList li.clear
+{
+	clear:both;
+	float:none;
+} 
+
+.featureList ul.clear
+{
+	clear:both;
+	float:none;
+} 
+
+
+.featureText
+{
+	margin-left:30px;
+}
+
+.createCourse a
+{
+	background:url("../images/featureIcon1.png") no-repeat;
+}
+
 .createAssessment a
 {
-	background-image:url("../images/featureIcon2.png");
-	background-repeat:no-repeat;
-	height:21px;
-	width:20px;		
+	background:url("../images/featureIcon2.png") no-repeat;
 }
 
 .trackScores a
 {
-	background-image:url("../images/featureIcon3.png");
-	background-repeat:no-repeat;
-	height:21px;
-	width:20px;		
+	background:url("../images/featureIcon3.png") no-repeat;
 }
 
 .reports a
 {
-	background-image:url("../images/featureIcon4.png");
-	background-repeat:no-repeat;
-	height:21px;
-	width:20px;		
+	background:url("../images/featureIcon4.png") no-repeat;
 }
 
 .multimediaSupport a
 {
-	background-image:url("../images/featureIcon5.png");
-	background-repeat:no-repeat;
-	height:21px;
-	width:20px;		
+	background:url("../images/featureIcon5.png") no-repeat;
 }
 .notifications a
 {
-	background-image:url("../images/featureIcon7.png");
-	background-repeat:no-repeat;
-	height:21px;
-	width:20px;		
+	background:url("../images/featureIcon7.png") no-repeat;
 }
 .certifications a
 {
-	background-image:url("../images/featureIcon8.png");
-	background-repeat:no-repeat;
-	height:21px;
-	width:20px;		
+	background:url("../images/featureIcon8.png") no-repeat;
 }
 .groupDiscussions a
 {
-	background-image:url("../images/featureIcon9.png");
-	background-repeat:no-repeat;
-	height:21px;
-	width:20px;		
+	background:url("../images/featureIcon9.png") no-repeat;
 }
 
-.client
+.aptitudeTests
+{
+	background:url("../images/featureIcon6.png") no-repeat;
+}
+
+.client, .testimonial
 {
 	width:220px;
 	float:right;
-	margin-left:20px;
 }
 
-.client h2
+.client h2, .testimonial h2
 {
 	color:#00bbcc;
 	font-size:36px;
 	margin-top:80px;
 }
 
+.clientWindow
+{
+	border: 1px solid #dfdfdf;
+	margin:20px 0;
+}
+
 .MLB
 {
-	background-image:url("../images/MLB.png");
-	background-repeat:no-repeat;
-	height:60px;
-	width:220px;
-	background-size:100%;	
-	border: 1px solid #8c8c8c;
-	display:block;
-	background-position:center;
-	margin-top:20px;
+	background:url("../images/MLB.png") no-repeat center;
+	border-bottom: 1px solid #dfdfdf;
+	height: 59px;
+	width:218px;
+	display: block;
 }
 
 .USA
 {
-	background-image:url("../images/usaFootball.png");
-	background-repeat:no-repeat;
-	height:80px;
+	background:url("../images/usaFootball.png") no-repeat center;
+	height:79px;
 	width:108px;
-	background-size:100%;	
-	border: 1px solid #8c8c8c;
-	display:block;
-	background-position:center;
+	border-right: 1px solid #dfdfdf;
 	float:left;
 }
 .chemistry
 {
-	background-image:url("../images/chemistry.png");
-	background-repeat:no-repeat;
-	height:80px;
+	background:url("../images/chemistry.png") no-repeat center;
+	height:79px;
 	width:108px;
-	background-size:100%;	
-	border: 1px solid #8c8c8c;
-	display:block;
-	background-position:center;
 	float:left;
 }
 
+.testimonialWindow
+{
+	border: 1px solid #dfdfdf;
+	margin:20px 0;
+	font-family: Helvetica;
+}
 
+.testimonialWindow li
+{
+	border-bottom: 1px solid #dfdfdf ;
+}
 
+.testimonialWindow .image
+{
+	height: 44px;
+	width: 44px;
+	border:1px solid #dfdfdf;
+	border-radius: 50%;
+	overflow: hidden;
+	float: left;
+	margin: 0px 0 0 10px; 
+}
+
+.testimonial img
+{
+	float: left;
+}
+
+.personInfo
+{
+	margin:20px 20px 20px 64px;
+}
+
+.personInfo p
+{
+	margin-top:8px;
+	font-size:11px;
+	line-height:13px;
+    color:#8c8c8c;
+}
+
+.personInfo h3
+{
+	font-weight:bold;
+	font-size:14px;
+	line-height:18px;
+}
+
+.footer
+{
+	background: #00a2b1;
+	padding-bottom: 97px;
+}
+
+.footer h2
+{
+	font-size: 26px;
+	line-height: 40px;
+	float: left;
+	letter-spacing:-1px; 
+	margin:10px 0;
+}
+
+.footerTextBtnWrap a
+{
+	font-size:26px;
+    border-radius: 3px;
+    background:#ff8a00;
+    color:white;
+    padding:15px 30px; 
+    float: right;
+    margin-left: 90px;
+    font-family: titillium_bdbold;
+}
+
+.footerTextBtnWrap
+{
+	border-bottom: 1px solid #00919f;
+	padding:20px 0;
+}
+
+.footerNav
+{
+	float: left;
+	margin-top: 30px;
+}
+.footerNav li
+{
+		float: left;
+}
+.footerNav a
+{
+	margin-right: 20px;
+	font-size: 18px;
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+	display: block;
+}
+
+.footer li.clear
+{
+	clear:both;
+	float:none;
+} 
+
+.socialIcon
+{
+	float: right;
+	margin-top: 33px;
+} 
+.socialIcon li
+{
+	float: left;
+	margin-left:7px; 
+}
+
+.socialIcon li a
+{
+	height: 30px;
+	width: 30px;
+	display:inline-block;
+}
+
+.facebookIcon
+{
+	background: url("../images/facebookIcon.png") no-repeat center;
+}
+.twitterIcon
+{
+	background: url("../images/twitterIcon.png") no-repeat center;
+}
+.pintrestIcon
+{
+	background: url("../images/pintrestIcon.png") no-repeat center;
+}
+.gIcon
+{
+	background: url("../images/gIcon.png") no-repeat center;
+}
+
+.TC
+{
+	float: left;
+}
+
+.footer h5
+{
+	float: left;
+}
+
+.TC li 
+{
+	margin-left: 20px;
+	float: left;
+}
+
+.TC a 
+{
+	color: white;
+	font-size: 14px;
+}
