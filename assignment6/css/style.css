@@ -18,48 +18,42 @@ a,ul{
 
 @font-face {
     font-family: 'oxygenbold';
-    src: url('oxygen-bold-webfont.eot');
-    src: url('oxygen-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('oxygen-bold-webfont.woff') format('woff'),
-         url('oxygen-bold-webfont.ttf') format('truetype'),
-         url('oxygen-bold-webfont.svg#oxygenbold') format('svg');
+    src: url('../fonts/oxygen/oxygen-bold-webfont.eot');
+    src: url('../fonts/oxygen/oxygen-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/oxygen/oxygen-bold-webfont.woff') format('woff'),
+         url('../fonts/oxygen/oxygen-bold-webfont.ttf') format('truetype'),
+         url('../fonts/oxygen/oxygen-bold-webfont.svg#oxygenbold') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 
-
-
-
 @font-face {
     font-family: 'oxygenregular';
-    src: url('oxygen-webfont.eot');
-    src: url('oxygen-webfont.eot?#iefix') format('embedded-opentype'),
-         url('oxygen-webfont.woff') format('woff'),
-         url('oxygen-webfont.ttf') format('truetype'),
-         url('oxygen-webfont.svg#oxygenregular') format('svg');
+    src: url('../fonts/oxygen/oxygen-webfont.eot');
+    src: url('../fonts/oxygen/oxygen-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/oxygen/oxygen-webfont.woff') format('woff'),
+         url('../fonts/oxygen/oxygen-webfont.ttf') format('truetype'),
+         url('../fonts/oxygen/oxygen-webfont.svg#oxygenregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 
-
-
-
 @font-face {
     font-family: 'oxygenregular';
-    src: url('oxygen-regular-webfont.eot');
-    src: url('oxygen-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('oxygen-regular-webfont.woff') format('woff'),
-         url('oxygen-regular-webfont.ttf') format('truetype'),
-         url('oxygen-regular-webfont.svg#oxygenregular') format('svg');
+    src: url('../fonts/oxygen/oxygen-regular-webfont.eot');
+    src: url('../fonts/oxygen/oxygen-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/oxygen/oxygen-regular-webfont.woff') format('woff'),
+         url('../fonts/oxygen/oxygen-regular-webfont.ttf') format('truetype'),
+         url('../fonts/oxygen/oxygen-regular-webfont.svg#oxygenregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 
 body{
-    font-family: oxygen, arial, man-serif, serif, hevetica;
+    font-family: 'oxygenregular', arial, man-serif, serif, hevetica;
 }
 
 .clear{
@@ -97,47 +91,35 @@ body{
 .navigation
 {
     float:left;
-    margin:8px 60px;
-    font-size:16px;
-    line-height: 18px;
-    font-weight:bold;
-    padding: 0;
+    margin: 0 50px;
 }
-
 
 .navigation li
 {
-    float:left;
-    padding:10px 0;
-    margin-right:30px;
+    margin-right:10px;
+    float: left;
+}
+
+.navigation a
+{
+    display: block;
+    font:oxygenbold 16px;
+    line-height: 19px;
+    padding:18px 10px;
 }
 
 .navigation .lastLi
 {
 	margin-right:0;
 }
-.searchBar{
+
+.searchText
+{  
     border:1px solid #888888;
-    float:left;
     margin:12px 0;
-    height:29px;
-    width:238px;
     border-radius:3px;
-}
-
-.searchBtn{
-    background: url("../images/searchIcon.png") no-repeat center;
-    height:29px;
-    width:29px;
-    padding:12px;
-    border:none;
-    float:right;
-}
-
-.searchText{
-    border:none;
-    width:206px;    
-    height:26px;
+    background: url('../images/searchIcon.png') no-repeat 97%;
+    padding:6px 35px 6px 10px;
 }
 
 .socialIcon{
@@ -146,20 +128,16 @@ body{
 
 .socialIcon li{
     float:left;
-    margin-right:5px;
+    margin-left:5px;
 }
 .socialIcon a{
-    height:24px;
-    width:24px;
+    height:25px;
+    width:25px;
     display:block;
     background-color:#000000;
-    border-radius:12px;
+    border-radius:50%;
 }
 
-.socialIcon .lastLi
-{
-	margin-right:0;
-}
 .facebook{
     background:url("../images/facebookIcon.png") no-repeat center;
 }
@@ -177,24 +155,26 @@ body{
 
 .banner{
     height:545px;
-    background:url("../images/bannerImage.jpg") no-repeat center;
+    background: #000000 url("../images/bannerImage.jpg") no-repeat center;
     color:#ffffff;
     display:block;
+    position: relative;
 }
 
 .banner h1{
-    font-size:44px;
+    font:44px bold;
     line-height: 46px;
-    font-weight:bold;
-    margin:440px 0 0 0;
-    float:left;
+    position: absolute;
+    bottom: 70px;
 }
 
-.banner h3{
-    float:left;
+.banner span
+{
     font-size:22px;
-    line-height: 24px;
+    line-height:24px;
     margin:6px 0 0 0;
+    position: absolute;
+    bottom: 30px;
 }
 
 .feature
@@ -203,12 +183,12 @@ body{
 }
 .featureList
 {
-    float:left;
     font-size:22px;
     line-height:24px;
 }
 
-.featureList li{
+.featureList li
+{
     float:left;
     margin:20px 20px 20px 0;
     width:220px;
@@ -219,9 +199,17 @@ body{
 {
     border-radius:5px;
     display:block;
-    background: #ffffff url("../images/forwardBtn.png") no-repeat;
-    background-position:180px;
-    padding:20px;
+    background: #ffffff url("../images/forwardBtn.png") no-repeat 92%;
+    padding:20px 50px 20px 20px;
+}
+
+.featureList li.clear
+{
+    float: none;
+    clear: both;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
 }
 
 .featureList .lastLi
@@ -232,22 +220,26 @@ body{
 .content
 {
    color:#888888;
+    padding:15px 0 70px 0;
    border-bottom:1px solid #dadada;
 }
 
-.content h2{
-    font-size:40px;
-    line-height:40px;
-    margin-top:67px;
+.contentImage
+{
+    height: 200px;
+    max-width: 100%;
+    overflow: hidden;
 }
 .content img{
     display:block;
 }
-.eventList 
-{
-    float:left;
-    padding:15px 0 70px 0;
+.content h2{
+    font-size:40px;
+    line-height:40px;
+    margin-top:67px;
+    margin-bottom: 20px;
 }
+
 .eventList li
 {
     float:left;
@@ -255,19 +247,27 @@ body{
     margin-right:20px;
 }
 
+.eventList li.clear
+{
+    float: none;
+    clear: both;
+}
+
 .eventList .lastLi
 {
     margin-right:0;
 }
+
 .eventInfo
 {
     background:#4466ff;
-    color:white;
+    color: #ffffff;
     padding:20px 38px 20px 15px;
 }
 
-.eventInfo h4{
+.eventInfo h4 a{
     font-family:22px;
+    color: #ffffff;
     font-weight:bold;
 }
 
@@ -290,12 +290,18 @@ body{
 
 .footerLists .list
 {
-    font-size:14px;
+    font-size:10px;
 }
 
 .footerLists
 {
     float:left;
+}
+
+
+.footerLists .list ul
+{
+    margin-bottom: 10px;
 }
 
 .footerLists .list
@@ -322,17 +328,16 @@ body{
 {
     border-top:1px solid #666666;
     margin:20px 0 0;
-    text-align:center;
     font: 12px bold;
+    text-align:center;
 }
 
-.footerNavWrap ul
-{
-    margin:20px 0 0 220px;
+.footerNavWrap ul{
+    margin-top: 20px;
 }
 
 .footerNavWrap li{
-    float:left;
+    display: inline;
     border-right: 1px solid #888888;
 }
 
@@ -340,23 +345,19 @@ body{
 {
     border-right:none;
 }
+
 .footerNavWrap a
 {
     padding: 0 6px;
-    display:block;
+
 }
 
-.footerNavWrap li.clear
-{
-    float:none;
-    clear:both;
-}
 
 .footerNavWrap span{
     color:#b4b4b4;
     margin-top:20px;
-    display:block;
     font-size:14px;
+    display: block;
 }
 
 
