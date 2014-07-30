@@ -1,0 +1,367 @@
+html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, a, ul, li, nav, button,img
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration:none;
+    list-style:none;
+}
+
+a,ul{
+    text-decoration: none;
+    list-style:none;
+    color:black;
+}
+
+@font-face {
+    font-family: 'oxygenbold';
+    src: url('oxygen-bold-webfont.eot');
+    src: url('oxygen-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('oxygen-bold-webfont.woff') format('woff'),
+         url('oxygen-bold-webfont.ttf') format('truetype'),
+         url('oxygen-bold-webfont.svg#oxygenbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'oxygenregular';
+    src: url('oxygen-webfont.eot');
+    src: url('oxygen-webfont.eot?#iefix') format('embedded-opentype'),
+         url('oxygen-webfont.woff') format('woff'),
+         url('oxygen-webfont.ttf') format('truetype'),
+         url('oxygen-webfont.svg#oxygenregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'oxygenregular';
+    src: url('oxygen-regular-webfont.eot');
+    src: url('oxygen-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('oxygen-regular-webfont.woff') format('woff'),
+         url('oxygen-regular-webfont.ttf') format('truetype'),
+         url('oxygen-regular-webfont.svg#oxygenregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    font-family: oxygen, arial, man-serif, serif, hevetica;
+}
+
+.clear{
+	clear:both;
+	float:none;
+}
+
+.alignLeft{	
+	float:left;
+}
+
+.alignRight{	
+	float:right;
+}
+
+.container{	
+	width: 940px;
+	margin:0 auto;
+}
+
+#header{	
+}
+
+
+
+.logo
+{
+	background:url("../images/logo.png") no-repeat center;
+	height:45px;
+	width:120px;
+	padding: 5px 0;
+	float:left;
+}
+
+.navigation
+{
+    float:left;
+    margin:8px 60px;
+    font-size:16px;
+    line-height: 18px;
+    font-weight:bold;
+    padding: 0;
+}
+
+
+.navigation li
+{
+    float:left;
+    padding:10px 0;
+    margin-right:30px;
+}
+
+.navigation .lastLi
+{
+	margin-right:0;
+}
+.searchBar{
+    border:1px solid #888888;
+    float:left;
+    margin:12px 0;
+    height:29px;
+    width:238px;
+    border-radius:3px;
+}
+
+.searchBtn{
+    background: url("../images/searchIcon.png") no-repeat center;
+    height:29px;
+    width:29px;
+    padding:12px;
+    border:none;
+    float:right;
+}
+
+.searchText{
+    border:none;
+    width:206px;    
+    height:26px;
+}
+
+.socialIcon{
+	margin:15px 0;
+}
+
+.socialIcon li{
+    float:left;
+    margin-right:5px;
+}
+.socialIcon a{
+    height:24px;
+    width:24px;
+    display:block;
+    background-color:#000000;
+    border-radius:12px;
+}
+
+.socialIcon .lastLi
+{
+	margin-right:0;
+}
+.facebook{
+    background:url("../images/facebookIcon.png") no-repeat center;
+}
+.twitter{
+    background:url("../images/twitterIcon.png") no-repeat center;
+}
+
+.pinterest{
+    background:url("../images/pinterestIcon.png") no-repeat center;
+}
+
+.gplus{
+    background:url("../images/gplusIcon.png") no-repeat center;
+}
+
+.banner{
+    height:545px;
+    background:url("../images/bannerImage.jpg") no-repeat center;
+    color:#ffffff;
+    display:block;
+}
+
+.banner h1{
+    font-size:44px;
+    line-height: 46px;
+    font-weight:bold;
+    margin:440px 0 0 0;
+    float:left;
+}
+
+.banner h3{
+    float:left;
+    font-size:22px;
+    line-height: 24px;
+    margin:6px 0 0 0;
+}
+
+.feature
+{
+	    background: #ecab1f;
+}
+.featureList
+{
+    float:left;
+    font-size:22px;
+    line-height:24px;
+}
+
+.featureList li{
+    float:left;
+    margin:20px 20px 20px 0;
+    width:220px;
+    height:60px;
+}
+
+.featureList a
+{
+    border-radius:5px;
+    display:block;
+    background: #ffffff url("../images/forwardBtn.png") no-repeat;
+    background-position:180px;
+    padding:20px;
+}
+
+.featureList .lastLi
+{
+    margin-right:0;
+}
+
+.content
+{
+   color:#888888;
+   border-bottom:1px solid #dadada;
+}
+
+.content h2{
+    font-size:40px;
+    line-height:40px;
+    margin-top:67px;
+}
+.content img{
+    display:block;
+}
+.eventList 
+{
+    float:left;
+    padding:15px 0 70px 0;
+}
+.eventList li
+{
+    float:left;
+    width:300px;
+    margin-right:20px;
+}
+
+.eventList .lastLi
+{
+    margin-right:0;
+}
+.eventInfo
+{
+    background:#4466ff;
+    color:white;
+    padding:20px 38px 20px 15px;
+}
+
+.eventInfo h4{
+    font-family:22px;
+    font-weight:bold;
+}
+
+.eventInfo p
+{
+    margin-top:10px;
+    font-size:14px;
+}
+
+.eventInfo span
+{
+    font-size:11px;
+    margin:0 0 6px 0;
+}
+
+.footer{
+    background:#f1f1f1;
+    padding: 30px 0 128px;
+}
+
+.footerLists .list
+{
+    font-size:14px;
+}
+
+.footerLists
+{
+    float:left;
+}
+
+.footerLists .list
+{
+    float:left;
+    margin-right:60px;
+}
+
+.footerLists .clear li
+{
+    float:none;
+    clear:both;
+}
+
+.footerLists h5
+{
+    margin-bottom:10px;
+    font-size:14px;
+    font-weight:bold;
+    color:#666666;
+}
+
+.footerNavWrap
+{
+    border-top:1px solid #666666;
+    margin:20px 0 0;
+    text-align:center;
+    font: 12px bold;
+}
+
+.footerNavWrap ul
+{
+    margin:20px 0 0 220px;
+}
+
+.footerNavWrap li{
+    float:left;
+    border-right: 1px solid #888888;
+}
+
+.footerNavWrap .lastLi
+{
+    border-right:none;
+}
+.footerNavWrap a
+{
+    padding: 0 6px;
+    display:block;
+}
+
+.footerNavWrap li.clear
+{
+    float:none;
+    clear:both;
+}
+
+.footerNavWrap span{
+    color:#b4b4b4;
+    margin-top:20px;
+    display:block;
+    font-size:14px;
+}
+
+
+
+
+
+
+
