@@ -74,11 +74,6 @@ body{
 	margin:0 auto;
 }
 
-#header{	
-}
-
-
-
 .logo
 {
 	background:url("../images/logo.png") no-repeat center;
@@ -290,7 +285,7 @@ body{
 
 .footerLists .list
 {
-    font-size:10px;
+    font-size:14px;
 }
 
 .footerLists
