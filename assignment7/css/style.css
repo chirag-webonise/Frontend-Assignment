@@ -68,22 +68,26 @@ body{
     margin:0 auto;
 }
 
+img {
+    width:100%;
+}
+
+.imageWrap{
+    overflow:hidden;
+}
+
 #header{
     border-bottom: 1px solid #d9d9d9;
-    box-shadow: 0 0 5px #d9d9d9;
+    box-shadow: 0 1px 5px #d9d9d9;
 }
 
 .logo{
-    background:url("../images/logo.png") no-repeat center;
-    height:59px;
-    width:184px;
-    padding:27px 0 10px;
-    display: block;
+    padding:17px 0 16px;
     float: left;
 }
 
 .navigation{
-    margin:15px 35px 0;
+    margin:0 35px;
     font-family:'ralewaybold';
     font-size:16px;
     line-height: 18px;	
@@ -91,28 +95,36 @@ body{
 }
 
 .navigation li{
-    margin-right:18px;
     float: left;
+    margin-right:15px;
 }
 
 .navigation a{
     display: block;
-    padding:29px 10px;
+    padding:39px 13px 39px 11px;
     color:#227744;
 }
 
-.banner{
-    height:447px;
-    background:url("../images/bannerImage.jpg") no-repeat center;
-    display:block;
-    position: relative;
+.navigation a:hover
+{
+     color:#155225;   
+}
+
+.banner .imageWrap
+{
+   height:455px;
+}
+
+.banner .container
+{
+    position:relative;
 }
 
 .bannerContent{
     width:452px;
     position: absolute;
-    top:130px;
-    left:35px;
+    top:134px;
+    left:37px;
 }
 
 .bannerContent h1{
@@ -120,28 +132,29 @@ body{
     font-family: 'ralewaylight';
     font-size: 50px;
     line-height: 48px;
+    display:inline;
 }
 
 .bannerContent .greenBtn{
-    margin-top: 20px;
-    display: block;
+    margin: 0 0 0 22px;
+    padding: 8px 39px;
 }
 
 .featureList{
-    padding:26px 0;
+    padding:25px 0;
     font-family:'ralewayregular';
     font-size: 18px;
     line-height: 20px;
 }
 
 .featureList li{
-    width: 252px;
-    min-height: 166px;
+    width: 413px;
+    min-height:139px;
     margin-right: 30px;
     border: 1px solid #cccccc;
     border-radius: 2px;
     float: left;
-    padding: 18px 180px 18px 18px;
+    padding: 16px 23px 17px 15px;
 }
 
 .featureList .lastLi{
@@ -158,21 +171,22 @@ body{
     border: none;
 }
 
-.stayInspired{
-    background:url('../images/content1.jpg') no-repeat center right 8%;
+.featureList .text
+{
+    width:263px;
+    float:left;
 }
 
-.shopKit{
-    background:url('../images/content2.jpg') no-repeat center right 8%;
+.featureList .imageWrap{
+    height:133px;
 }
 
 .featureList h3{
     color:#636363;
     font-size: 21px;
     font-family:'ralewaymedium';
-    line-height: 25px;
-    margin-bottom:6px;
-
+    line-height: 23px;
+    margin-bottom:10px;
 }
 
 .featureList p{
@@ -181,33 +195,33 @@ body{
 }
 
 .stayInspired form{
-    border: 1px solid #dddddd;
-    border-radius: 2px;
-    height: 30px;
-    padding-left: 5px;
-    border-right: none;
+    height: 32px;
     font-size: 14px;
 }
 
-
-.stayInspired .email{
-    width:70%;
-    border: none;
-    height: 90%;
+.stayInspired input[type="email"]{
+    width:182px;
+    height:26px;
     font-family: 'ralewayregular';
+    border:1px solid #dddddd;   
     color:#636363;
+    border-right:none; 
+    border-top-left-radius: 2px 2px;
+    border-bottom-left-radius: 2px 2px;
+    padding-left:5px;
 }
 
-
 .stayInspired .signUp{
-    height: 100%;
-    width:28%;
-    border-right: 1px solid #dddddd;
-    border-radius: 2px;
+    height:30px;
+    width:73px;
+    border:1px solid #dddddd;
+    border-top-right-radius: 2px 2px;
+    border-bottom-right-radius: 2px 2px;
     background: url("../images/btnGradient2.jpg") repeat-x;
-    float: right;
+    display:inline;
     font-family: 'ralewaymedium';
     color:#636363;
+    cursor:pointer;
 }
 
 .greenBtn{
@@ -215,14 +229,14 @@ body{
     border-radius: 2px;
     background:url("../images/btnGradient.jpg") repeat-x;
     color: #ffffff;
-    padding: 8px 54px;
-    margin-top: 26px;
-    float: left;
+    padding: 7px 54px;
+    margin-top: 21px;
+    display:inline-block;
     font-family: 'ralewaybold';
 }
 
 .grid{
-    padding: 90px 0px;
+    padding: 90px 28px;
     font-family:'ralewayregular';
     font-size: 14px;
     line-height: 22px; 
@@ -248,12 +262,7 @@ body{
 
 .grid .imageWrap{
     height: 164px;
-    overflow: hidden;
-    margin: 14px 0;
-}
-
-.grid img{
-    max-height: 100%;
+    margin: 12px 0;
 }
 
 .grid .p{
@@ -271,6 +280,7 @@ body{
 .grid a{
     color: #1d683c;
     font-size: 12px;
+    font-size: 14px;
     text-transform: uppercase;
 }
 
@@ -278,15 +288,10 @@ body{
     border-top: 1px solid #dddddd;
 }
 
-.content .container{
-    width: 882px;
-    margin: 0 auto;
-}
-
 .footer{
     border-top: 1px solid #e1e1e1;
     background: #f7f7f7;
-    padding-bottom:50px;
+    padding-bottom:60px;
 }
 
 .footerWraper
@@ -327,7 +332,7 @@ body{
     font-size:12px;
     line-height:13px;
     margin-left:54px;
-    float:left;
+    float: left;
 }
 
 .termsNav li{
@@ -344,6 +349,11 @@ body{
     color:#bebebe;
     border-right:1px solid #bebebe;
 }
+
+.termsNav a:hover{
+    color:#000000;
+}
+
 
 .socialIcon{
     float: right;
@@ -365,20 +375,26 @@ body{
     width:33px;
     display: block;
     border-radius:5px;
+    background-color:#1c663b;
+}
+
+.socialIcon a:hover
+{
+    background-color:#222222;
 }
 
 .facebook{
-    background:url("../images/facebookIcon.png") no-repeat center #222222;
+    background:url("../images/facebookIcon.png") no-repeat center;
 }
 
 .twitter{
-    background:url("../images/twitterIcon.png") no-repeat center #1c663b;
+    background:url("../images/twitterIcon.png") no-repeat center;
 }
 
 .pinterest{
-    background:url("../images/pinterestIcon.png") no-repeat center #1c663b;
+    background:url("../images/pinterestIcon.png") no-repeat center;
 }
 
 .gplus{
-    background:url("../images/gplusIcon.png") no-repeat center #1c663b;
+    background:url("../images/gplusIcon.png") no-repeat center;
 }
